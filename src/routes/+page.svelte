@@ -84,10 +84,8 @@
         background-color: #ddd;
     }
 </style>
-
-
   
-<Navbar/>
+<Navbar/>  <!-- Directly imported component from lib -->
 
 <div class = "background-section"></div>
 
@@ -101,7 +99,7 @@
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 8 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
         
         <div class="banner">
@@ -111,7 +109,7 @@
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 8 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event,"/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     
         <div class="banner">
@@ -121,7 +119,7 @@
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
             <p class="price">Price 5 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     
         <div class="banner">
@@ -131,7 +129,7 @@
             <hr class="separator">
             <p class="duration">Duration 1 hr 30 min</p>
             <p class="price">Price 7 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     
         <div class="banner">
@@ -141,7 +139,7 @@
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 9 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     
         <div class="banner">
@@ -151,7 +149,7 @@
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
             <p class="price">Price 4 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event,"/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     
         <div class="banner">
@@ -161,37 +159,22 @@
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 10 Euros</p>
-            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+            <button class="book-btn" on:click={() => redirectToPage("/booking")}>Book</button>
         </div>
     </div>
     <div class="scroll-triangle right"></div>
 </div>
 
-<Form/>
+<Form/> <!-- Directly imported component from lib -->
 
 <script>
 
     import Navbar from "../lib/Navbar.svelte";
     import Form from "../lib/Form.svelte";
 
-    function redirectToPage(event, url) {
+    function redirectToPage(url) {
         // Perform any necessary actions before redirecting
-
-        const banner = event.target.parentElement;
-
-            // Extract the information from the banner element
-            const title = banner.querySelector("h3").textContent;
-            const duration = banner.querySelector(".duration").textContent;
-            const description = banner.querySelector(".description").textContent;
-            const price = banner.querySelector(".price").textContent;
-
-            // Store the data in localStorage
-           
-            sessionStorage.setItem('title', title);
-            sessionStorage.setItem('duration', duration);
-            sessionStorage.setItem('description', description);
-            sessionStorage.setItem('price', price);
-            
+        
             // Redirect to the desired page
             window.location.href = url;
     }
