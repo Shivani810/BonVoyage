@@ -95,7 +95,7 @@
         }
 </style>
 
-<Navbar/>
+<Navbar/> <!-- Directly imported component from lib -->
 
 
 <div class="booking-section">

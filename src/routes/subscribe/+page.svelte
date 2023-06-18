@@ -5,7 +5,7 @@
     import Form from "../../lib/Form.svelte";
 </script>
 
-<Navbar/>
+<Navbar/> <!-- Directly imported component from lib -->
 
 <div class="form-container">
     <h2>Newsletter Subscription</h2>

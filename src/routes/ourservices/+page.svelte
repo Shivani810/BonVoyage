@@ -5,5 +5,5 @@
 import Navbar from "../../lib/Navbar.svelte";
 </script>
 
-<Navbar/>
+<Navbar/> <!-- Directly imported component from lib -->
   

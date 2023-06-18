@@ -53,7 +53,7 @@
 </style>
   
 
-<Navbar/>
+<Navbar/> <!-- Directly imported component from lib -->
 
 <div class="section">
     <div class="image">
@@ -89,7 +89,7 @@
 
 
 <div class="form-container">
-    <Form/>
+    <Form/> <!-- Directly imported component from lib -->
 </div>
 
 
