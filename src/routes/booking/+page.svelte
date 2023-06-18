@@ -9,7 +9,8 @@
     let selectedDate = "";
     let selectedTime = "";
     let bookingConfirmed = false;
-    let title = false;
+    let title = "" ;
+    let description = "" ;
    
 
     function handleDateChange(event) {
@@ -30,7 +31,12 @@
 
 
         // Retrieve the stored title from local storage
-        title = localStorage.getItem("title");
+        title = localStorage.getItem('bannerTitle');
+        console.log(title);
+
+        // Retrieve the stored title from local storage
+        description= localStorage.getItem('bannerDescription');
+        console.log(description);
          
     })
 
@@ -185,8 +191,8 @@
 
         <div class="Description-section">
                 <h2 class= "title">{title}</h2>
-                <h3>About this activity</h3>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet repellat assumenda tenetur! Ipsum, numquam sint? Nemo nulla, voluptatum, ipsam illo eveniet ad atque explicabo id numquam debitis totam quasi!</p>
+                <h3>Activitythis activity</h3>
+                <p class="description">{description}</p>
                 <hr class="separator">
                 
                 <div class="details">
