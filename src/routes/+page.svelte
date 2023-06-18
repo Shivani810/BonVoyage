@@ -1,0 +1,199 @@
+<!-- this is the home page -->
+
+<style>
+     
+     /* CSS styles for the background section */
+     .background-section {
+        background-image: url('https://wallpaperaccess.com/full/1168014.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 400px; /* Adjust the height as per your requirement */
+        width: 100%;
+        position: relative;
+    }  
+
+   
+    /* CSS for the banners */
+    
+    .landmark-section{
+        display: flex;
+        text-align: center; /* Center align the banners */
+        padding: 0 120px; /* Add padding on the left and right */
+        overflow-x: scroll; /* Enable horizontal scrolling */
+    }
+    
+    .banner {
+        width: 300px;
+        margin: 20px 10px;
+        border: 0.5px solid teal;
+        padding: 0;
+        padding-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 250px; /* Set the desired height for the images */
+        margin: 0;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    
+    .banner h3 {
+        color: teal;
+    }
+    
+    .banner .description {
+        margin: 10px;
+    }
+    
+    .banner .duration {
+        font-weight: bold;
+    }
+    
+    .banner .separator {
+        border: none;
+        border-top: 1px solid teal;
+        margin: 10px;
+    }
+    
+    .banner .price {
+        font-weight: bold;
+        color: teal;
+    }
+    
+    .banner .book-btn {
+        display: inline-block;
+        background-color: teal;
+        color: #fadd06;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+    
+    .banner .book-btn:hover {
+        background-color: #ddd;
+    }
+</style>
+
+
+  
+<Navbar/>
+
+<div class = "background-section"></div>
+
+<div class="landmark-section">
+    <div class="scroll-triangle left"></div>
+    <div class="landmark-images">
+        <div class="banner">
+            <img src="https://img2.goodfon.com/wallpaper/nbig/b/c6/arc-de-triomphe-paris-france-6630.jpg" alt="Eiffel Tower" onclick="openPopup('https://img2.goodfon.com/wallpaper/nbig/b/c6/arc-de-triomphe-paris-france-6630.jpg', 'Eiffel Tower', 'Description of Eiffel Tower', '2 hrs', '8 Euros')">
+            <h3>Arc de Triomphe</h3>
+            <p class="description">Description of Arc de Triomphe</p>
+            <hr class="separator">
+            <p class="duration">Duration 2 hrs</p>
+            <p class="price">Price 8 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+        </div>
+        
+        <div class="banner">
+            <img src="https://www.planetware.com/photos-large/F/eiffel-tower.jpg" alt="Eiffel Tower" onclick="openPopup('https://www.planetware.com/photos-large/F/eiffel-tower.jpg', 'Eiffel Tower', 'Description of Eiffel Tower', '2 hrs', '8 Euros')">
+            <h3>Eiffel Tower</h3>
+            <p class="description">Description of Eiffel Tower</p>
+            <hr class="separator">
+            <p class="duration">Duration 2 hrs</p>
+            <p class="price">Price 8 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event,"/booking")}>Book</button>
+        </div>
+    
+        <div class="banner">
+            <img src="https://images.pexels.com/photos/1460145/pexels-photo-1460145.jpeg?cs=srgb&dl=pexels-adrienn-1460145.jpg&fm=jpg" alt="Notre Dame Cathedral" onclick="openPopup('https://images.pexels.com/photos/1460145/pexels-photo-1460145.jpeg?cs=srgb&dl=pexels-adrienn-1460145.jpg&fm=jpg', 'Notre Dame Cathedral', 'Description of Notre Dame Cathedral', '1 hr', '5 Euros')">
+            <h3>Notre Dame Cathedral</h3>
+            <p class="description">Description of Notre Dame Cathedral</p>
+            <hr class="separator">
+            <p class="duration">Duration 1 hr</p>
+            <p class="price">Price 5 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+        </div>
+    
+        <div class="banner">
+            <img src="https://t3.ftcdn.net/jpg/02/46/24/14/360_F_246241441_TK86KqjTH5Z3XaZ3NAbeiSkmZbGBDfuW.jpg" alt="Invalides" onclick="openPopup('https://t3.ftcdn.net/jpg/02/46/24/14/360_F_246241441_TK86KqjTH5Z3XaZ3NAbeiSkmZbGBDfuW.jpg', 'Invalides', 'Description of Invalides', '1 hr 30 min', '7 Euros')">
+            <h3>Invalides</h3>
+            <p class="description">Description of Invalides</p>
+            <hr class="separator">
+            <p class="duration">Duration 1 hr 30 min</p>
+            <p class="price">Price 7 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+        </div>
+    
+        <div class="banner">
+            <img src="https://c0.wallpaperflare.com/preview/821/777/259/paris-france-the-centre-pompidou-centre-pompidou.jpg" alt="Centre Pompidou" onclick="openPopup('https://c0.wallpaperflare.com/preview/821/777/259/paris-france-the-centre-pompidou-centre-pompidou.jpg', 'Centre Pompidou', 'Description of Centre Pompidou', '2 hrs', '9 Euros')">
+            <h3>Centre Pompidou</h3>
+            <p class="description">Description of Centre Pompidou</p>
+            <hr class="separator">
+            <p class="duration">Duration 2 hrs</p>
+            <p class="price">Price 9 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+        </div>
+    
+        <div class="banner">
+            <img src="https://facnh.com/wp-content/uploads/2021/09/Luxembourg-Gardens-2.jpg" alt="Jardins du Luxembourg" onclick="openPopup('https://facnh.com/wp-content/uploads/2021/09/Luxembourg-Gardens-2.jpg', 'Jardins du Luxembourg', 'Description of Jardins du Luxembourg', '1 hr', '4 Euros')">
+            <h3>Jardins du Luxembourg</h3>
+            <p class="description">Description of Jardins du Luxembourg</p>
+            <hr class="separator">
+            <p class="duration">Duration 1 hr</p>
+            <p class="price">Price 4 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event,"/booking")}>Book</button>
+        </div>
+    
+        <div class="banner">
+            <img src="https://smapse.com/storage/2020/06/converted/895_0_sakre-ker-smapse1.jpg" alt="Montmartre" onclick="openPopup('https://smapse.com/storage/2020/06/converted/895_0_sakre-ker-smapse1.jpg', 'Montmartre', 'Description of Montmartre', '2 hrs', '10 Euros')">
+            <h3>Montmartre</h3>
+            <p class="description">Description of Montmartre</p>
+            <hr class="separator">
+            <p class="duration">Duration 2 hrs</p>
+            <p class="price">Price 10 Euros</p>
+            <button class="book-btn" on:click={() => redirectToPage(Event, "/booking")}>Book</button>
+        </div>
+    </div>
+    <div class="scroll-triangle right"></div>
+</div>
+
+<Form/>
+
+<script>
+
+    import Navbar from "../lib/Navbar.svelte";
+    import Form from "../lib/Form.svelte";
+
+    function redirectToPage(event, url) {
+        // Perform any necessary actions before redirecting
+
+        const banner = event.target.parentElement;
+
+            // Extract the information from the banner element
+            const title = banner.querySelector("h3").textContent;
+            const duration = banner.querySelector(".duration").textContent;
+            const description = banner.querySelector(".description").textContent;
+            const price = banner.querySelector(".price").textContent;
+
+            // Store the data in localStorage
+           
+            sessionStorage.setItem('title', title);
+            sessionStorage.setItem('duration', duration);
+            sessionStorage.setItem('description', description);
+            sessionStorage.setItem('price', price);
+            
+            // Redirect to the desired page
+            window.location.href = url;
+    }
+</script>
+  
