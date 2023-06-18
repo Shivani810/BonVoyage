@@ -3,6 +3,50 @@
 <script>
     import Navbar from "../../lib/Navbar.svelte";
     import Form from "../../lib/Form.svelte";
+    import { createClient } from '@supabase/supabase-js'; // Import the createClient function
+   
+        
+    // Import dotenv library to access environment variables from .env file
+        import dotenv from 'dotenv';
+        dotenv.config();
+
+        // Initialize Supabase client
+        const supabaseUrl = "https://gxemhqnvpdlgvcakouvz.supabase.co";
+        const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd4ZW1ocW52cGRsZ3ZjYWtvdXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU5NTQ1MDYsImV4cCI6MjAwMTUzMDUwNn0.yvJf6YoQaW3dLdVVwHjlY1b4PiIBhWFEWrEP4nCbY0s";
+        const supabase = createClient(supabaseUrl, supabaseKey, {
+  persistSession: false,});
+
+
+        // Function to handle form submission
+  async function sendMessage(event) {
+    event.preventDefault();
+
+    const nameInput = document.getElementById('name-input');
+    const emailInput = document.getElementById('email-input');
+    const messageInput = document.getElementById('message-input');
+
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const message = messageInput.value;
+
+        // Insert the data into the "contact" table
+        const { data, error } = await supabase.from('contact').insert([
+        { name, email, message },
+        ]);
+
+        if (error) {
+        console.error('Error inserting data:', error);
+        } else {
+        console.log('Data inserted successfully:', data);
+        // Reset form inputs after successful submission
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+        }
+    }
+
+
+
 </script>
 
 <Navbar/> <!-- Directly imported component from lib -->
@@ -17,10 +61,10 @@
 
 <div class="form-container">
     <h2>Contact Us</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message" rows="4" required></textarea>
+    <form on:submit={sendMessage}>
+        <input type="text" id="name-input" placeholder="Your Name" required>
+        <input type="email" id="email-input" placeholder="Your Email" required>
+        <textarea id="message-input" placeholder="Message" rows="4" required></textarea>
         <button type="submit">Send Message</button>
     </form>
 </div>

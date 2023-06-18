@@ -180,32 +180,5 @@
     
         }
 
-
-        document.addEventListener('DOMContentLoaded', function() {
-    // Get the book buttons
-    var bookButtons = document.querySelectorAll('.book-btn');
-    
-    // Add a click event listener to each book button
-    bookButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Get the selected destination's details
-            var banner = event.target.parentNode;
-            var title = banner.querySelector('h3').innerText;
-            var description = banner.querySelector('.description').innerText;
-            var duration = banner.querySelector('.duration').innerText;
-            var price = banner.querySelector('.price').innerText;
-            
-            // Store the title in localStorage to pass it to the next page
-            localStorage.setItem('selectedTitle', title);
-            localStorage.setItem('selectedDescription', description);
-            localStorage.setItem('selectedDuration', duration);
-            localStorage.setItem('selectedPrice', price);
-
-            // Open the new page in a new tab or window
-            window.open("/booking", "_blank");
-        });
-    });
-}) 
-
 </script>
   
