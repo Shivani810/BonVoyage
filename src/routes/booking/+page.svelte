@@ -9,6 +9,8 @@
     let selectedDate = "";
     let selectedTime = "";
     let bookingConfirmed = false;
+    let title = false;
+   
 
     function handleDateChange(event) {
         selectedDate = event.target.value;
@@ -25,9 +27,17 @@
     onMount(() => {
         console.log("Selected Date:", selectedDate);
         console.log("Selected Time:", selectedTime);
-    });    
 
 
+        // Retrieve the stored title from local storage
+        title = localStorage.getItem("title");
+         
+    })
+
+        
+
+   
+    
 </script>
 
 
@@ -174,7 +184,7 @@
 
 
         <div class="Description-section">
-                <h2 class= "title">Destination to be imported from Home Page upon clicking</h2>
+                <h2 class= "title">{title}</h2>
                 <h3>About this activity</h3>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet repellat assumenda tenetur! Ipsum, numquam sint? Nemo nulla, voluptatum, ipsam illo eveniet ad atque explicabo id numquam debitis totam quasi!</p>
                 <hr class="separator">
