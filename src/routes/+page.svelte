@@ -95,7 +95,7 @@
         <div class="banner">
             <img src="https://img2.goodfon.com/wallpaper/nbig/b/c6/arc-de-triomphe-paris-france-6630.jpg" alt="Eiffel Tower" onclick="openPopup('https://img2.goodfon.com/wallpaper/nbig/b/c6/arc-de-triomphe-paris-france-6630.jpg', 'Eiffel Tower', 'Description of Eiffel Tower', '2 hrs', '8 Euros')">
             <h3>Arc de Triomphe</h3>
-            <p class="description">Description of Arc de Triomphe</p>
+            <p class="description">"Marvel at the iconic Arc de Triomphe, a monumental triumphal arch in Paris. Learn about its historical significance and architectural grandeur."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 8 Euros</p>
@@ -105,7 +105,7 @@
         <div class="banner">
             <img src="https://www.planetware.com/photos-large/F/eiffel-tower.jpg" alt="Eiffel Tower" onclick="openPopup('https://www.planetware.com/photos-large/F/eiffel-tower.jpg', 'Eiffel Tower', 'Description of Eiffel Tower', '2 hrs', '8 Euros')">
             <h3>Eiffel Tower</h3>
-            <p class="description">Description of Eiffel Tower</p>
+            <p class="description">"Experience the awe-inspiring Eiffel Tower, an architectural masterpiece and symbol of Paris. Enjoy breathtaking views of the city from its observation decks."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 8 Euros</p>
@@ -115,7 +115,7 @@
         <div class="banner">
             <img src="https://images.pexels.com/photos/1460145/pexels-photo-1460145.jpeg?cs=srgb&dl=pexels-adrienn-1460145.jpg&fm=jpg" alt="Notre Dame Cathedral" onclick="openPopup('https://images.pexels.com/photos/1460145/pexels-photo-1460145.jpeg?cs=srgb&dl=pexels-adrienn-1460145.jpg&fm=jpg', 'Notre Dame Cathedral', 'Description of Notre Dame Cathedral', '1 hr', '5 Euros')">
             <h3>Notre Dame Cathedral</h3>
-            <p class="description">Description of Notre Dame Cathedral</p>
+            <p class="description">"Explore the magnificent Notre Dame Cathedral, a Gothic masterpiece known for its stunning stained glass windows and rich history."</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
             <p class="price">Price 5 Euros</p>
@@ -125,7 +125,7 @@
         <div class="banner">
             <img src="https://t3.ftcdn.net/jpg/02/46/24/14/360_F_246241441_TK86KqjTH5Z3XaZ3NAbeiSkmZbGBDfuW.jpg" alt="Invalides" onclick="openPopup('https://t3.ftcdn.net/jpg/02/46/24/14/360_F_246241441_TK86KqjTH5Z3XaZ3NAbeiSkmZbGBDfuW.jpg', 'Invalides', 'Description of Invalides', '1 hr 30 min', '7 Euros')">
             <h3>Invalides</h3>
-            <p class="description">Description of Invalides</p>
+            <p class="description">"Discover the splendor of Invalides, a complex of museums and monuments housing Napoleon's tomb. Immerse yourself in French military history and art.</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr 30 min</p>
             <p class="price">Price 7 Euros</p>
@@ -135,7 +135,7 @@
         <div class="banner">
             <img src="https://c0.wallpaperflare.com/preview/821/777/259/paris-france-the-centre-pompidou-centre-pompidou.jpg" alt="Centre Pompidou" onclick="openPopup('https://c0.wallpaperflare.com/preview/821/777/259/paris-france-the-centre-pompidou-centre-pompidou.jpg', 'Centre Pompidou', 'Description of Centre Pompidou', '2 hrs', '9 Euros')">
             <h3>Centre Pompidou</h3>
-            <p class="description">Description of Centre Pompidou</p>
+            <p class="description">"Visit the vibrant Centre Pompidou, a modern art museum showcasing a diverse collection of contemporary artworks and innovative exhibitions."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 9 Euros</p>
@@ -145,7 +145,7 @@
         <div class="banner">
             <img src="https://facnh.com/wp-content/uploads/2021/09/Luxembourg-Gardens-2.jpg" alt="Jardins du Luxembourg" onclick="openPopup('https://facnh.com/wp-content/uploads/2021/09/Luxembourg-Gardens-2.jpg', 'Jardins du Luxembourg', 'Description of Jardins du Luxembourg', '1 hr', '4 Euros')">
             <h3>Jardins du Luxembourg</h3>
-            <p class="description">Description of Jardins du Luxembourg</p>
+            <p class="description">"Stroll through the beautiful Jardins du Luxembourg, a serene park with meticulously manicured gardens, ornate fountains, and a sense of tranquility."</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
             <p class="price">Price 4 Euros</p>
@@ -155,7 +155,7 @@
         <div class="banner">
             <img src="https://smapse.com/storage/2020/06/converted/895_0_sakre-ker-smapse1.jpg" alt="Montmartre" onclick="openPopup('https://smapse.com/storage/2020/06/converted/895_0_sakre-ker-smapse1.jpg', 'Montmartre', 'Description of Montmartre', '2 hrs', '10 Euros')">
             <h3>Montmartre</h3>
-            <p class="description">Description of Montmartre</p>
+            <p class="description">"Experience the bohemian charm of Montmartre, an artistic neighborhood famous for its picturesque streets, historic cafes, and the iconic Sacré-Cœur Basilica."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
             <p class="price">Price 10 Euros</p>
