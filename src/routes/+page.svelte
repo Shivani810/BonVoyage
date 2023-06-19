@@ -41,6 +41,14 @@
         object-fit: cover;
         cursor: pointer;
     }
+
+            .banner img {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .banner img:hover {
+        transform: scale(1.1);
+        }
     
     .banner h3 {
         color: teal;

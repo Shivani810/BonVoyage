@@ -1,11 +1,11 @@
 <script>
 
-export let logo = "BonVoyage"
+export let title = "BonVoyage"
 
 </script>
 
 <div class="navbar">
-    <a class="logo" href="/">{logo}</a>
+    <a class="title" href="/">{title}</a>
     <a href="/ourhistory">Our History</a>
     <a href="/ourservices">Our Services</a>
     <a href="/subscribe">Subscribe</a>
@@ -35,7 +35,7 @@ export let logo = "BonVoyage"
             background-color: #ddd;
         }
         
-        .navbar .logo {
+        .navbar .title{
             float: left;
             padding: 14px 16px;
             font-size: 18px;
