@@ -2,7 +2,6 @@
 
 <script>
     import Navbar from "../../lib/Navbar.svelte";
-    import Form from "../../lib/Form.svelte";
     import { createClient } from '@supabase/supabase-js'; // Import the createClient function
    
         

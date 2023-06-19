@@ -83,6 +83,10 @@
     .banner .book-btn:hover {
         background-color: #ddd;
     }
+
+   
+
+
 </style>
   
 <Navbar/>  <!-- Directly imported component from lib -->
@@ -98,8 +102,9 @@
             <p class="description">"Marvel at the iconic Arc de Triomphe, a monumental triumphal arch in Paris. Learn about its historical significance and architectural grandeur."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
-            <p class="price">Price 8 Euros</p>
+            <p class="price">Price 20 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Arc de Triomphe",{description1})}>Book</button>
+            
         </div>
         
         <div class="banner">
@@ -108,7 +113,7 @@
             <p class="description">"Experience the awe-inspiring Eiffel Tower, an architectural masterpiece and symbol of Paris. Enjoy breathtaking views of the city from its observation decks."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
-            <p class="price">Price 8 Euros</p>
+            <p class="price">Price 20 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Eiffel Tower",{description2})}>Book</button>
         </div>
     
@@ -118,7 +123,7 @@
             <p class="description">"Explore the magnificent Notre Dame Cathedral, a Gothic masterpiece known for its stunning stained glass windows and rich history."</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
-            <p class="price">Price 5 Euros</p>
+            <p class="price">Price 10 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Notre Dame Cathedral",{description3})}>Book</button>
         </div>
     
@@ -128,7 +133,7 @@
             <p class="description">"Discover the splendor of Invalides, a complex of museums and monuments housing Napoleon's tomb. Immerse yourself in French military history and art.</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr 30 min</p>
-            <p class="price">Price 7 Euros</p>
+            <p class="price">Price 15 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Invalides",{description4})}>Book</button>
         </div>
     
@@ -138,7 +143,7 @@
             <p class="description">"Visit the vibrant Centre Pompidou, a modern art museum showcasing a diverse collection of contemporary artworks and innovative exhibitions."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
-            <p class="price">Price 9 Euros</p>
+            <p class="price">Price 20 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Centre Pompidou",{description5})}>Book</button>
         </div>
     
@@ -148,7 +153,7 @@
             <p class="description">"Stroll through the beautiful Jardins du Luxembourg, a serene park with meticulously manicured gardens, ornate fountains, and a sense of tranquility."</p>
             <hr class="separator">
             <p class="duration">Duration 1 hr</p>
-            <p class="price">Price 4 Euros</p>
+            <p class="price">Price 10 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Jardins du Luxembourg",{description6})}>Book</button>
         </div>
     
@@ -158,7 +163,7 @@
             <p class="description">"Experience the bohemian charm of Montmartre, an artistic neighborhood famous for its picturesque streets, historic cafes, and the iconic Sacré-Cœur Basilica."</p>
             <hr class="separator">
             <p class="duration">Duration 2 hrs</p>
-            <p class="price">Price 10 Euros</p>
+            <p class="price">Price 20 Euros</p>
             <button class="book-btn" on:click={() => redirectToPage("/booking","Montmartre",{description7})}>Book</button>
         </div>
     </div>
@@ -179,10 +184,6 @@
     let description5 ="Visit the vibrant Centre Pompidou, a modern art museum showcasing a diverse collection of contemporary artworks and innovative exhibitions.";
     let description6= "Stroll through the beautiful Jardins du Luxembourg, a serene park with meticulously manicured gardens, ornate fountains, and a sense of tranquility.";
     let description7 = "Experience the bohemian charm of Montmartre, an artistic neighborhood famous for its picturesque streets, historic cafes, and the iconic Sacré-Cœur Basilica.";
-
-
-
-
 
 
     function redirectToPage(url, title, description) {
