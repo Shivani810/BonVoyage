@@ -191,7 +191,7 @@
 
         <div class="Description-section">
                 <h2 class= "title">{title}</h2>
-                <h3>Activitythis activity</h3>
+                <h3>Activity this activity</h3>
                 <p class="description">{description}</p>
                 <hr class="separator">
                 

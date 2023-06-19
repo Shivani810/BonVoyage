@@ -9,6 +9,7 @@ export let logo = "BonVoyage"
     <a href="/ourhistory">Our History</a>
     <a href="/ourservices">Our Services</a>
     <a href="/subscribe">Subscribe</a>
+    <a href="/socialmedia">Social Media</a>
 </div>
 
 <style>
