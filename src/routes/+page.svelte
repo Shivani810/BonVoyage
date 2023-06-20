@@ -8,19 +8,18 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        height: 400px; /* Adjust the height as per your requirement */
+        height: 400px; 
         width: 100%;
         position: relative;
     }  
-
    
     /* CSS for the banners */
     
     .landmark-section{
         display: flex;
         text-align: center; /* Center align the banners */
-        padding: 0 120px; /* Add padding on the left and right */
-        overflow-x: scroll; /* Enable horizontal scrolling */
+        padding: 0 120px; 
+        overflow-x: scroll; /* Enabling horizontal scrolling */
     }
     
     .banner {
@@ -33,22 +32,24 @@
         display: inline-block;
         vertical-align: top;
     }
+
+     /* CSS for the images in banners */
     
     .banner img {
-        width: 100%;
-        height: 250px; /* Set the desired height for the images */
-        margin: 0;
-        object-fit: cover;
-        cursor: pointer;
+    width: 100%;
+    height: 250px; 
+    margin: 0;
+    object-fit: cover;
+    cursor: pointer;
     }
 
-            .banner img {
-        transition: transform 0.3s ease-in-out;
-        }
+    .banner img {
+    transition: transform 0.3s ease-in-out;
+    }
 
-        .banner img:hover {
-        transform: scale(1.1);
-        }
+    .banner img:hover {
+    transform: scale(1.1);
+    }
     
     .banner h3 {
         color: teal;
@@ -90,9 +91,7 @@
     
     .banner .book-btn:hover {
         background-color: #ddd;
-    }
-
-   
+    }  
 
 
 </style>
@@ -194,10 +193,9 @@
     let description7 = "Experience the bohemian charm of Montmartre, an artistic neighborhood famous for its picturesque streets, historic cafes, and the iconic Sacré-Cœur Basilica.";
 
 
-    function redirectToPage(url, title, description) {
-    // Perform any necessary actions before redirecting
+    function redirectToPage(url, title, description) {   
 
-    // Store the title in local storage
+    // Store the title in local storage brfore redirecting
      localStorage.setItem('bannerTitle', title);
      localStorage.setItem('bannerDescription', JSON.stringify(description));
   

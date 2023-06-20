@@ -13,7 +13,7 @@
         justify-content: space-between;
         padding: 0;
         background-color: #f5f5f5;
-        margin-bottom: 0; /* Remove default bottom margin */
+        margin-bottom: 0; 
     }
   
     .section .image {
@@ -31,8 +31,8 @@
         flex: 0 0 50%;
         max-width: 50%;
         text-align: center;
-        padding: 0 0px; /* Add left and right padding */
-        box-sizing: border-box; /* Ensure padding is included within the width */
+        padding: 0 0px; 
+        box-sizing: border-box; 
     }
   
     .section h2 {

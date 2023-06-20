@@ -1,7 +1,8 @@
 <script>
 	import Navbar from "../../lib/Navbar.svelte";
 	import { onMount } from "svelte"; 
-
+ 
+/* Code to make the images as a slideshow */
 
 let slides;
 let currentSlide = 0;
@@ -25,7 +26,8 @@ onMount(() => {
 	clearInterval(slideInterval);
   };
 });
-  </script>
+
+</script>
 
 <Navbar/>  <!-- Directly imported component from lib -->
   

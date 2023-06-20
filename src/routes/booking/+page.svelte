@@ -1,4 +1,4 @@
-<!-- this is our booking page -->
+<!-- this is our booking page, it appears if you click Book on home page -->
 
 <script>
 
@@ -50,6 +50,8 @@
 <style>    
 
     /* CSS for the booking page */
+
+     /* CSS for the description section */
         .Description-section {
             font-family: Arial, sans-serif;
             color: #333;
@@ -107,9 +109,11 @@
             font-size: 10px;
             line-height: 1;
         } 
+
+        /* CSS for the booking section*/
         
-        .booking-section2 fieldset {
-        width: 200px; /* Adjust the width value as desired */
+        .booking-section fieldset {
+        width: 200px; 
         height: 50px;
         padding-left: 10px;
         padding-right: 20px;
@@ -132,7 +136,6 @@
         border-radius: 5px;
     }
 
-    /* Add the following styles to make the legend coherent with the navbar */
     legend {
         color: teal;
         font-size: 16px;
@@ -202,7 +205,7 @@
                 <p class="price"></p>
                 </div>
 
-                <div class="booking-section2">
+                <div class="booking-section">
                     <h3>Select a Date and Time</h3>
                     <hr class="separator">
                     <fieldset>
