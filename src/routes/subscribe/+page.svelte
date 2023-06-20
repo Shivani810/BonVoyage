@@ -2,14 +2,10 @@
 
 <script>
     import Navbar from "../../lib/Navbar.svelte";
-    import { createClient } from '@supabase/supabase-js'; // Import the createClient function
-   
+    import { createClient } from '@supabase/supabase-js'; // Import the createClient function  
         
-    // Import dotenv library to access environment variables from .env file
-        import dotenv from 'dotenv';
-        dotenv.config();
-
-        // Initialize Supabase client
+   
+      // Initialize Supabase client
         const supabaseUrl = "https://gxemhqnvpdlgvcakouvz.supabase.co";
         const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd4ZW1ocW52cGRsZ3ZjYWtvdXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU5NTQ1MDYsImV4cCI6MjAwMTUzMDUwNn0.yvJf6YoQaW3dLdVVwHjlY1b4PiIBhWFEWrEP4nCbY0s";
         const supabase = createClient(supabaseUrl, supabaseKey, {
