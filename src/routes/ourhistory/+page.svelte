@@ -26,15 +26,23 @@
         width: 100%;
         height: auto;
     }
+
+    .section .image {
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .section .image:hover {
+    transform: scale(1.02);    
+    }
   
     .section .text {
         flex: 0 0 50%;
         max-width: 50%;
         text-align: center;
-        padding: 0 0px; 
-        box-sizing: border-box; 
+        padding: 0 80px; 
+        box-sizing: border-box;         
     }
-  
+    
     .section h2 {
         font-size: 24px;
         margin-top: 0;
@@ -44,6 +52,16 @@
     .section p {
         margin-bottom: 0;
         color: teal;
+    }
+
+    .section .text h2:hover {
+    transform: scale(1.3); 
+    
+    }
+    .section .text p:hover {
+        transform: scale(1.02);
+        font-weight: bold;
+        
     }
 
     .form-container {
