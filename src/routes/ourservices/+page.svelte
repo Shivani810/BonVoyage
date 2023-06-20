@@ -58,11 +58,20 @@ import Navbar from "../../lib/Navbar.svelte";
   	color: teal;
 	}
 	
+	.header h1:hover {
+		transform: scale(1.2);
+	}
+	
 	.intro {
   	background-color: #ffffff;
   	padding: 20px;
   	text-align: center;
 	}
+
+	.intro p:hover {
+		transform: scale(1.2);
+	}
+	
 	
 	.services {
   	display: flex;
@@ -79,6 +88,10 @@ import Navbar from "../../lib/Navbar.svelte";
   	padding: 20px;
   	text-align: center;
   	width: 250px;
+	}
+
+	.service:hover {
+		transform: scale(1.2);
 	}
 	
 	.service h2 {
