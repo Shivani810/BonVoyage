@@ -32,16 +32,17 @@ export let title = "BonVoyage"
             padding: 14px 16px;
             text-decoration: none;
             font-size: 20px;
+           
         }
         
-        .navbar a:hover {
-            background-color: #ddd;
+        .navbar a:hover {           
+            transform: scale(1.2);
         }
         
         .navbar .title{
             float: left;
             padding: 14px 16px;
-            font-size: 20px;
+            font-size: 20px;            
         }
 
         .navbar .logo img {
